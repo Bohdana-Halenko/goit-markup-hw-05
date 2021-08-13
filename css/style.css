@@ -84,7 +84,8 @@ img {
   left: 0;
   bottom: -33px;
 }
-.site-nav-item .contacts-item {
+.site-nav-item .site-nav-link,
+.contacts-item .contact-link {
   transition: color 250ms var(--time-function);
 }
 .site-nav .site-nav-link.current {
