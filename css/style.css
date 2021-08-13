@@ -11,6 +11,7 @@
   --logo-color: #000000;
   --background-team-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -83,7 +84,9 @@ img {
  left: 0;
  bottom: -33px;
 }
-
+.site-nav-item, .contacts-item{
+  transition: color 250ms var(--time-function);
+}
 .site-nav .site-nav-link.current {
   color: var(--accent-color);
 }
@@ -153,6 +156,7 @@ img {
   min-width: 200px;
   text-align: center;
   display: block;
+
 }
 
 /*BENEFITS*/
@@ -303,6 +307,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
 }
 .social-list-icon {
   width: 20px;
@@ -338,6 +343,8 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--icon-color);
+  transition: fill 250ms var(--time-function),
+  border-color 250ms var(--time-function);
 }
 .clients-item {
   margin-left: 30px;
@@ -413,7 +420,9 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--primary-background-color)
+  fill: var(--primary-background-color);
+  transition: background-color 250ms var(--time-function),
+  fill 250ms var(--time-function);
 }
 .footer-social-link:focus,
 .footer-social-link:hover {
@@ -494,6 +503,8 @@ img {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms var(--time-function),
+  box-shadow 250ms var(--time-function), color 250ms var(--time-function);
 }
 .filter-button.current {
   background-color: var(--accent-color);
